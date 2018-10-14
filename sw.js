@@ -1,3 +1,6 @@
+/**
+ * First cache just homepage and styles, and name the cache
+ */
 const filesToCache = [
   '/',
   'css/styles.css'
@@ -5,6 +8,9 @@ const filesToCache = [
 
 const staticCacheName = 'restrevs-static-v1';
 
+/**
+ * Install and add files to cache
+ */
 self.addEventListener('install', event => {
   console.log('Attempting to install service worker and cache static assets');
   event.waitUntil(
@@ -14,7 +20,10 @@ self.addEventListener('install', event => {
     })
   );
 });
-
+/**
+ * If requests match cache, respond with cache, if not make network request and
+ * add the request to the cache
+ */
 self.addEventListener('fetch', event => {
   console.log('Fetch event for ', event.request.url);
   event.respondWith(
