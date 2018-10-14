@@ -186,7 +186,7 @@ nav h1 a {
   text-transform: uppercase;
 }
 
-#restaurants-list li a:hover {
+#restaurants-list li a:hover, #restaurants-list li a:focus {
   background-color: #444;
 }
 
