@@ -20,7 +20,7 @@
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" >
+    <ul class="breadcrumb" id="breadcrumb" >
       <li><a href="/">Home</a></li>
     </ul>
     <!-- End breadcrumb -->
@@ -32,22 +32,22 @@
   <main id="maincontent" role="main">
     <!-- Beginning map -->
     <section id="map-container">
-      <div tabindex="0" id="map" role="application" aria-label="Map of restaurant location"></div>
+      <div class="map" tabindex="0" id="map" role="application" aria-label="Map of restaurant location"></div>
     </section>
     <!-- End map -->
     <section class="restaurant-details">
       <!-- Beginning restaurant -->
-      <section id="restaurant-container">
-        <h1 id="restaurant-name"></h1>
-        <img id="restaurant-img">
-        <p id="restaurant-cuisine"></p>
-        <p id="restaurant-address"></p>
-        <table id="restaurant-hours"></table>
+      <section class="restaurant-container" id="restaurant-container">
+        <h1 class="restaurant-name" id="restaurant-name"></h1>
+        <img class="restaurant-img-large" id="restaurant-img">
+        <p class="restaurant-cuisine" id="restaurant-cuisine"></p>
+        <p class="restaurant-address" id="restaurant-address"></p>
+        <table class="restaurant-hours" id="restaurant-hours"></table>
       </section>
       <!-- end restaurant -->
       <!-- Beginning reviews -->
-      <section id="reviews-container">
-        <ul id="reviews-list"></ul>
+      <section class="reviews-container" id="reviews-container">
+        <ul class="reviews-list" id="reviews-list"></ul>
       </section>
       <!-- End reviews -->
     </section>
